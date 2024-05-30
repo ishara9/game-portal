@@ -1,7 +1,14 @@
-import React from "react";
+import GameMenu from "./GameMenu";
+import { Button, ButtonGroup } from "@chakra-ui/react";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <GameMenu />
+      <div>Home</div>
+      <Button colorScheme="blue">Submit</Button>
+    </>
+  );
 };
 
 export default Home;
