@@ -1,6 +1,7 @@
 import GameMenu from "./GameMenu";
 import { Button, ButtonGroup, Grid, GridItem, Show } from "@chakra-ui/react";
 import NavBar from "./NavBar";
+import GameGrid from "./GameGrid";
 
 const Home = () => {
   return (
@@ -15,17 +16,20 @@ const Home = () => {
           <NavBar />
         </GridItem>
         <Show above="lg">
-          <GridItem area="aside" bg="gold">
+          <GridItem area="aside">
+          {/* <GridItem area="aside" bg="gold"> */}
             Aside
           </GridItem>
         </Show>
-        <GridItem area="main" bg="dodgerblue">
-          Main
+        <GridItem area="main" >
+        {/* <GridItem area="main" bg="dodgerblue"> */}
+          <GameGrid/>
         </GridItem>
       </Grid>
       <GameMenu />
       <div>Home</div>
       <Button colorScheme="blue">Submit</Button>
+      
     </>
   );
 };
