@@ -21,16 +21,14 @@ const Home = () => {
           <GridItem area="aside">
             {/* <GridItem area="aside" bg="gold"> */}
             Aside
+            <GameMenu />
           </GridItem>
         </Show>
         <GridItem area="main">
           {/* <GridItem area="main" bg="dodgerblue"> */}
-
           <GameGrid />
         </GridItem>
       </Grid>
-      <GameMenu />
-      <div>Home</div>
       {/* <Form /> */}
       {/* <Button colorScheme="blue">Submit</Button> */}
     </>
