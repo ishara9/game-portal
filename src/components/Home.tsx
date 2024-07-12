@@ -1,9 +1,7 @@
-import GameMenu from "./GameMenu";
-import { Button, ButtonGroup, Grid, GridItem, Show } from "@chakra-ui/react";
-import NavBar from "./NavBar";
+import { Grid, GridItem, Show } from "@chakra-ui/react";
 import GameGrid from "./GameGrid";
-import ColorModeSwitch from "./ColorModeSwitch";
-import Form from "./form/Form";
+import GenreList from "./GenreList";
+import NavBar from "./NavBar";
 
 const Home = () => {
   return (
@@ -19,18 +17,13 @@ const Home = () => {
         </GridItem>
         <Show above="lg">
           <GridItem area="aside">
-            {/* <GridItem area="aside" bg="gold"> */}
-            Aside
-            <GameMenu />
+            <GenreList />
           </GridItem>
         </Show>
         <GridItem area="main">
-          {/* <GridItem area="main" bg="dodgerblue"> */}
           <GameGrid />
         </GridItem>
       </Grid>
-      {/* <Form /> */}
-      {/* <Button colorScheme="blue">Submit</Button> */}
     </>
   );
 };
