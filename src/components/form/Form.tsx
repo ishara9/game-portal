@@ -1,5 +1,5 @@
 import { Button } from "@chakra-ui/react";
-import React, { FormEvent, useRef } from "react";
+import { FormEvent, useRef } from "react";
 
 const Form = () => {
   const nameRef = useRef<HTMLInputElement>(null);

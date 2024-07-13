@@ -1,13 +1,11 @@
 import {
-  VStack,
-  Text,
+  Button,
+  Heading,
   HStack,
   Image,
   List,
   ListItem,
   Spinner,
-  Button,
-  Heading,
 } from "@chakra-ui/react";
 import useGenres, { Genre } from "../hooks/useGenres";
 import getCroppedURL from "./util/ImageURL";
